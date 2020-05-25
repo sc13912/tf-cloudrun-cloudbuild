@@ -1,0 +1,38 @@
+
+variable "project" {
+  type        = string
+}
+
+variable "location" {
+  type        = string
+}
+
+variable "gcr_region" {
+  type        = string
+}
+
+
+variable "service_name" {
+  type        = string
+  default     = "cloudrun-demo"
+}
+
+variable "repository_name" {
+  type        = string
+}
+
+variable "image_name" {
+  type        = string
+  default     = "gcr.io/cloudrun/hello"
+}
+
+variable "branch_name" {
+  type        = string
+  default     = "master"
+}
+
+variable "digest" {
+  type        = string
+  default     = "latest"
+}
+

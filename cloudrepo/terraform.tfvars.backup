@@ -1,0 +1,7 @@
+project = "playground-s-11-3d0f71"
+
+location = "us-west1"
+
+gcr_region = "us"
+
+repository_name = "cloudrepo-demo"
