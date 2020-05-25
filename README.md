@@ -6,7 +6,7 @@ A Terraform example for launching a (Knative) Serverless CI/CD pipeline leveragi
 ## Prerequisites
 * Access to a GCP envrionment
 * Install Git, GCloud SDK & Terraform 
-* Check NTP clock sync status on your client!
+* Check NTP sync status on your client!
 * Clone this repo and update the variables in terraform.tfvars as per your speicifc environment 
 ```
 git clone https://github.com/sc13912/cloudrun-tf-demo.git
@@ -58,7 +58,7 @@ https://github.com/marketplace/google-cloud-build
 * Connect the GCP project and grant Cloud Build permissions to access your Github Repo
 <img src="images/git-2.png" width = "600">
 
-* Select the demo app repository, for now we'll skip creating the trigger as this will be perfomed by Terraform 
+* Select the demo app repository, for now we'll skip creating the trigger as this will be performed by Terraform 
 <img src="images/git-3.png" width = "600">
 
 
@@ -72,13 +72,13 @@ terraform init && terraform apply
 * Your terraform output should look like this
 <img src="images/tf-output.png" >
 
-* Now access the URL, which should be hosting a demo cloud run service <gcr.io/cloudrun/hello>
+* Now access the Cloud Run service URL, which should be hosting a default demo app <gcr.io/cloudrun/hello> to begin with
 <img src="images/cloudrun-demopage.png" >
 
 * Verify the Cloud Run service deployment status at the GCP console
 <img src="images/cloudrun-service.png" >
 
-* We can also verify the Cloud Build trigger has been created succssfully 
+* We can also verify the Cloud Build trigger has been created successfully 
 <img src="images/cloudbuild-trigger.png" width = "800">
 
 
@@ -87,7 +87,7 @@ terraform init && terraform apply
 * Make a Git push from the demo app repo
 <img src="images/git-push.png" >
 
-* Verify the pipeline has been trigged and monitor the (fully automated) build/deployemnt process
+* Verify the pipeline has been trigged and monitor the build/deployemnt process
 <img src="images/pipeline-run.png" width = "800">
 
 * Once the pipeline has been succssfully completed, you should see the Cloud Run service has been updated with a new GCR hosted image that was built and pushed through by the Cloud Build moments ago. 
