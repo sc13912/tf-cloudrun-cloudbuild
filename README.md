@@ -90,7 +90,7 @@ terraform init && terraform apply
 * Verify the pipeline has been trigged and monitor the build/deployemnt process
 <img src="images/pipeline-run.png" width = "800">
 
-* Once the pipeline has been succssfully completed, you should see the Cloud Run service has been updated with a new GCR hosted image that was built and pushed through by the Cloud Build moments ago. 
+* Once the pipeline has been successfully completed, you should see the Cloud Run service has been updated with a new GCR hosted image that was built and pushed through by the Cloud Build moments ago. 
 <img src="images/cloudrun-update.png" width = "800">
 
 * Refresh the same URL and you should see our demo app is now running on Cloud Run!
