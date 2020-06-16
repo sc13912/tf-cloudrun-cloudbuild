@@ -4,4 +4,4 @@ A Terraform example for launching a (Knative) Serverless CI/CD pipeline leveragi
 
 ---
 ## Guide
-[Refer to here] (https://route179.wordpress.com/2020/06/13/use-terraform-to-launch-a-serverless-ci-cd-pipeline-with-cloud-run-gcr-and-cloud-build/)
+- [Refer to here](https://route179.wordpress.com/2020/06/13/use-terraform-to-launch-a-serverless-ci-cd-pipeline-with-cloud-run-gcr-and-cloud-build/)
